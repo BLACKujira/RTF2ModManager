@@ -1,0 +1,142 @@
+﻿<Window x:Class="RTF2ModManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="R-Type Final 2 Mod 管理器"
+        Width="900" Height="680"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize"
+        Background="#f8f8f8">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20" Orientation="Vertical" Background="#f8f8f8">
+
+            <!-- 🌐 顶部语言选择 -->
+            <DockPanel Margin="0,0,0,15" LastChildFill="False">
+                <TextBlock x:Name="LanguageLabel"
+                           Text="语言 / Language:"
+                           VerticalAlignment="Center"
+                           Margin="0,0,10,0" />
+                <ComboBox x:Name="LanguageSelector"
+                          Width="150"
+                          SelectionChanged="LanguageSelector_SelectionChanged">
+                    <ComboBoxItem Tag="en" Content="English" />
+                    <ComboBoxItem Tag="zhs" Content="简体中文" />
+                    <ComboBoxItem Tag="zht" Content="繁體中文" />
+                    <ComboBoxItem Tag="ja" Content="日本語" />
+                </ComboBox>
+            </DockPanel>
+
+            <!-- 第一栏：游戏目录设置 -->
+            <GroupBox x:Name="GamePathGroup" Header="游戏目录设置" Margin="0,0,0,15">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- 显示当前目录 -->
+                    <TextBox x:Name="GamePathTextBox"
+                             Grid.Column="0"
+                             IsReadOnly="True"
+                             Margin="0,0,10,0"
+                             VerticalAlignment="Center"
+                             Text="尚未设置游戏目录" />
+
+                    <!-- 自动搜索 -->
+                    <Button x:Name="AutoSearchButton"
+                            Grid.Column="1"
+                            Margin="0,0,10,0"
+                            Width="100"
+                            Content="自动搜索"
+                            Click="AutoSearch_Click" />
+
+                    <!-- 手动选择 -->
+                    <Button x:Name="ManualSelectButton"
+                            Grid.Column="2"
+                            Width="100"
+                            Content="手动选择"
+                            Click="ManualSelect_Click" />
+                </Grid>
+            </GroupBox>
+
+            <!-- 第二栏：UE4SS 管理 -->
+            <GroupBox x:Name="UE4SSGroup" Header="UE4SS 状态管理" Margin="0,0,0,15">
+                <StackPanel Margin="10" Orientation="Vertical">
+
+                    <!-- 状态显示 -->
+                    <TextBlock x:Name="UE4SSStatusText"
+                               Text="当前状态：未安装"
+                               FontWeight="Bold"
+                               Margin="0,0,0,10"/>
+
+                    <!-- 四个操作按钮 -->
+                    <UniformGrid Columns="4" HorizontalAlignment="Stretch" Margin="0,5,0,0">
+                        <Button x:Name="InstallUE4SSButton"  Content="安装" Margin="5" Click="InstallUE4SS_Click"/>
+                        <Button x:Name="UninstallUE4SSButton" Content="卸载" Margin="5" Click="UninstallUE4SS_Click"/>
+                        <Button x:Name="ManualInjectButton" Content="手动注入" Margin="5" Click="ManualInject_Click"/>
+                        <Button x:Name="RestoreInjectionButton" Content="还原注入" Margin="5" Click="RestoreInjection_Click"/>
+                    </UniformGrid>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- 第三栏：Mod 管理 -->
+            <GroupBox x:Name="ModGroup" Header="Mod 管理" Margin="0,0,0,15">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- 左侧：Mod 表格 -->
+                    <DataGrid x:Name="ModList"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              IsReadOnly="True"
+                              SelectionMode="Single"
+                              SelectionChanged="ModList_SelectionChanged"
+                              Grid.Column="0"
+                              Margin="0,0,10,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="ModNameColumn" Header="Mod 名称" Binding="{Binding Name}" Width="*"/>
+                            <DataGridTextColumn x:Name="ModStatusColumn" Header="安装状态" Binding="{Binding Status}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!-- 右侧：状态+按钮 -->
+                    <StackPanel Grid.Column="1" Orientation="Vertical">
+                        <TextBox x:Name="ModDetailBox"
+                                 Text="选择一个 Mod 查看详细信息"
+                                 IsReadOnly="True"
+                                 AcceptsReturn="True"
+                                 VerticalScrollBarVisibility="Auto"
+                                 Height="200"
+                                 Margin="0,0,0,10"
+                                 TextWrapping="Wrap" />
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Button x:Name="InstallOrRepairButton"
+                                    Content="安装/修复"
+                                    Width="100" Margin="5"
+                                    Click="InstallOrRepair_Click" />
+                            <Button x:Name="UninstallButton"
+                                    Content="卸载"
+                                    Width="100" Margin="5"
+                                    Click="UninstallMod_Click" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+
+            <!-- 🧭 第四栏：快捷功能 -->
+            <GroupBox x:Name="QuickActionsGroup" Header="快捷功能">
+                <UniformGrid Columns="3" Margin="10">
+                    <Button x:Name="OpenModsFileButton" Content="打开 mods.txt" Margin="5" Click="OpenModsFile_Click" />
+                    <Button x:Name="OpenSaveFolderButton" Content="打开存档文件夹" Margin="5" Click="OpenSaveFolder_Click" />
+                    <Button x:Name="QuickLaunchButton" Content="快速启动游戏" Margin="5" Click="QuickLaunch_Click" />
+                </UniformGrid>
+            </GroupBox>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
