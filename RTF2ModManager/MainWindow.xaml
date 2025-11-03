@@ -64,11 +64,11 @@
             <GroupBox x:Name="UE4SSGroup" Header="UE4SS 状态管理" Margin="0,0,0,15">
                 <StackPanel Margin="10" Orientation="Vertical">
 
-                    <!-- 状态显示 -->
                     <TextBlock x:Name="UE4SSStatusText"
-                               Text="当前状态：未安装"
-                               FontWeight="Bold"
-                               Margin="0,0,0,10"/>
+                           Text="当前状态：未安装"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"
+                           TextWrapping="Wrap"/>
 
                     <!-- 四个操作按钮 -->
                     <UniformGrid Columns="4" HorizontalAlignment="Stretch" Margin="0,5,0,0">
