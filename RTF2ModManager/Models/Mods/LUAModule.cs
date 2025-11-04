@@ -12,9 +12,7 @@ namespace RTF2ModManager.Models.Mods
         public string FolderPath => Path.Combine(AppState.ModsPath, FileOrFolderName);
         public override string StatusText => $"{L18nUtils.GetLocalizationText("UI.Phrases.LuaModule")} {FileOrFolderName} " +
             $"[{L18nUtils.GetLocalizationText(IsInstalled() ? "UI.Phrases.Installed" : "UI.Phrases.NotInstalled")}] " +
-            $"[{(File.Exists(AppState.LUAModListFilePath)
-            ? L18nUtils.GetLocalizationText(IsActive() ? "UI.Phrases.Active" : "UI.Phrases.Inactive")
-            : L18nUtils.GetLocalizationText("UI.Phrases.ModListMissing"))}]";
+            $"[{(File.Exists(AppState.LUAModListFilePath) ? L18nUtils.GetLocalizationText(IsActive() ? "UI.Phrases.Active" : "UI.Phrases.Inactive") : L18nUtils.GetLocalizationText("UI.Phrases.ModListMissing"))}]";
 
         public override bool IsInstalled()
         {
