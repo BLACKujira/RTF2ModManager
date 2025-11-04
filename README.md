@@ -45,9 +45,9 @@ The bottom of the program provides three quick function buttons:
 | Mod | Introduction |
 |---|---|
 | [G-Type Origin](https://github.com/BLACKujira/GTypeOrigin) | Adds 3 Gradius-style homage stages. |
-| [Simple Boss LifeBar](https://github.com/BLACKujira/GTypeOrigin) | Adds a simple health bar for Boss battles; does not apply to Boss Rush. |
-| [RTF2 Debug Tools](https://github.Hujira/GTypeOrigin) | Cheating tools for debugging stages. Please **do not** use for unfair competition. |
-| [FPS Player](https://github.com/BLACKujira/GTypeOrigin) | Changes the gameplay to first-person shooter. Requires activation using the UE4SS Mod button. |
+| [Simple Boss LifeBar](https://github.com/BLACKujira/SimpleBossLifeBarMod) | Adds a simple health bar for Boss battles; does not apply to Boss Rush. |
+| [RTF2 Debug Tools](https://github.com/BLACKujira/RTF2DebugToolsMod) | Cheating tools for debugging stages. Please **do not** use for unfair competition. |
+| [FPS Player](https://github.com/BLACKujira/FPSPlayerMod) | Changes the gameplay to first-person shooter. Requires activation using the UE4SS Mod button. |
 
 For detailed information and usage instructions for each Mod, please refer to their respective homepages.
 

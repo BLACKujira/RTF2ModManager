@@ -43,9 +43,9 @@
 | Mod | 概要 |
 | :--- | :--- |
 | [G-Type Origin](https://github.com/BLACKujira/GTypeOrigin) | Gradius スタイルのオマージュステージを 3つ追加します。 |
-| [Simple Boss LifeBar](https://github.com/BLACKujira/GTypeOrigin) | ボス戦に簡易的なライフバーを追加します（BossRush には適用されません）。 |
-| [RTF2 Debug Tools](https://github.com/BLACKujira/GTypeOrigin) | ステージデバッグ用のチートツールです。不正な競争目的での使用はご遠慮ください。 |
-| [FPS Player](https://github.com/BLACKujira/GTypeOrigin) | ゲームプレイを一人称シューティングに変更します。UE4SS の Mod ボタンを使用して有効化する必要があります。 |
+| [Simple Boss LifeBar](https://github.com/BLACKujira/SimpleBossLifeBarMod) | ボス戦に簡易的なライフバーを追加します（BossRush には適用されません）。 |
+| [RTF2 Debug Tools](https://github.com/BLACKujira/RTF2DebugToolsMod) | ステージデバッグ用のチートツールです。不正な競争目的での使用はご遠慮ください。 |
+| [FPS Player](https://github.com/BLACKujira/FPSPlayerMod) | ゲームプレイを一人称シューティングに変更します。UE4SS の Mod ボタンを使用して有効化する必要があります。 |
 
 Mod の詳細情報、使用方法については、それぞれのホームページを参照してください。
 

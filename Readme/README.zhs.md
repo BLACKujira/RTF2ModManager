@@ -43,9 +43,9 @@
 | Mod | 简介 |
 |------|---------|
 | [G-Type Origin](https://github.com/BLACKujira/GTypeOrigin) | 添加3个Gradius风格的致敬关卡 |
-| [Simple Boss LifeBar](https://github.com/BLACKujira/GTypeOrigin) | 为Boss战添加简易的血条，不适用于BossRush |
-| [RTF2 Debug Tools](https://github.com/BLACKujira/GTypeOrigin) | 用于调试关卡的作弊工具，请勿用于不正当竞争目的 |
-| [FPS Player](https://github.com/BLACKujira/GTypeOrigin)  |  将游戏玩法变为第一人称射击，需使用UE4SS的Mod按钮激活 |
+| [Simple Boss LifeBar](https://github.com/BLACKujira/SimpleBossLifeBarMod) | 为Boss战添加简易的血条，不适用于BossRush |
+| [RTF2 Debug Tools](https://github.com/BLACKujira/RTF2DebugToolsMod) | 用于调试关卡的作弊工具，请勿用于不正当竞争目的 |
+| [FPS Player](https://github.com/BLACKujira/FPSPlayerMod)  |  将游戏玩法变为第一人称射击，需使用UE4SS的Mod按钮激活 |
 
 Mod的详细信息、使用说明请参照各自的主页。
 
