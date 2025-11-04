@@ -2,7 +2,7 @@
 
 # R-Type Final 2 Mod Manager
 
-This program aims to simplify the *UE4SS* dependency installation, Mod file deployment, management, and uninstallation processes for *R-Type Final 2*, providing players with a ready-to-use Mod experience.
+This program is designed to simplify the installation of UE4SS dependencies, as well as the deployment, management, and removal of Mod files for R-Type Final 2, offering players a plug-and-play Mod experience.
 
 ![Screenshot_en](Readme/Screenshot_en.png)
 
@@ -11,7 +11,7 @@ This program aims to simplify the *UE4SS* dependency installation, Mod file depl
 ### Installation and Launch
 
 1. Download `RTF2ModManager.zip` from [Releases](https://github.com/BLACKujira/GTypeOrigin/releases)
-2. Extract the contents of the compressed file to any directory (Please **do not** double-click the program inside the zip file, as this may cause the program to fail to locate Mod files)
+2. Extract the contents of the compressed file to any directory (Please **do not** run the program directly from the zip file, as it may fail to locate the Mod files properly.)
 3. Run `RTF2ModManager.exe`
 4. If you are using *Steam* and have not modified the default installation path, the program will automatically locate the game directory; otherwise:
     - Click `Game Directory Settings` → `Manual Select`
@@ -36,7 +36,7 @@ The bottom of the program provides three quick function buttons:
 
 | Button | Function Description |
 |---|---|
-| Open mods.txt | Opens the LUA Mod registry. The program automatically maintains this file, so manual modification is usually not required. |
+| Open mods.txt | Opens the LUA Mod registry. This file is automatically managed by the program, so manual edits are generally unnecessary. |
 | Open Save Folder | Opens the game save folder. **It is recommended to back up all files in this folder before installing Mods.** |
 | Quick Launch | Quickly launches the game, bypassing Steam, which is convenient for debugging. However, this method cannot access any DLC stages. |
 
@@ -55,4 +55,4 @@ For detailed information and usage instructions for each Mod, please refer to th
 
 1. This program lacked sufficient testing after development and may contain some bugs. Its performance in different system environments has not yet been clearly determined.
 2. Due to the small number of current R-Type Final 2 Mods, the Mod information is hard-coded into the program, making it less convenient for expansion. The Mods themselves are also placed within the program directory, and there is no online update function yet.
-3. Although the program itself is not complex, the compressed file is large due to the inclusion of the *.NET 8.0 Runtime*, *UE4SS zDEV-UE4SS_v3.0.1*, and the *G-Type Origin Mod*. Please be patient during the download.
+3. Although the program itself is relatively lightweight, the compressed file is large because it includes the .NET 8.0 Runtime, zDEV-UE4SS_v3.0.1, and the G-Type Origin Mod
