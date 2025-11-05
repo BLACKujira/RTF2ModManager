@@ -29,7 +29,7 @@ namespace RTF2ModManager.Models
         public static string LocaleJSONPath => Path.Combine(AppContext.BaseDirectory, "Locales");
 
         public static Mod[] Mods = ModList.GetMods();
-        public static SupportedLanguages CurrentLanguage = SupportedLanguages.zhs;
+        public static SupportedLanguages CurrentLanguage = SupportedLanguages.en;
 
         public static void DetectAndSetGamePath()
         {
@@ -79,7 +79,7 @@ namespace RTF2ModManager.Models
         {
             try
             {
-                // 获取系统当前 UI 语言（如 zh-CN、zh-TW、en-US、ja-JP）
+                // 获取系统当前 UI 语言
                 string lang = CultureInfo.CurrentUICulture.Name.ToLowerInvariant();
 
                 // 精确匹配和模糊匹配

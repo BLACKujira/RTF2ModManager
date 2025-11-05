@@ -25,6 +25,7 @@ namespace RTF2ModManager
         {
             InitializeComponent();
             L18nUtils.Initialize();
+            AppState.DetectAndSetLanguage();
 
             AppState.DetectAndSetGamePath();
 
