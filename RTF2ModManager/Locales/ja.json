@@ -80,7 +80,7 @@
       "InjectTimeout": "注入プロセスがタイムアウトし、終了しました。",
       "InjectNonZeroExit": "注入ツールがゼロ以外の終了コードを返しました：{0}。ファイルパスや権限を確認してください。",
       "InjectBackupMissing": "バックアップファイルが見つかりません。注入されていない可能性があります。",
-      "LogicModsMissing": "logicMods フォルダが見つかりません。UE4SS のインストール後に一度ゲームを起動してください。改善しない場合は手動での注入をお試しください",
+      "LogicModsMissing": "LogicMods フォルダが見つかりません。UE4SS のインストール後に一度ゲームを起動してください。改善しない場合は手動での注入をお試しください",
       "AOBMissing": "AOB スクリプトが見つかりません。UE4SS が正常に動作しない可能性があります。修復または再インストールをお試しください",
       "ManuallyInjected": "静的DLL注入済み",
       "InjectBackupResidual": "残された注入バックアップが検出されました。残留した DLL 依存によりゲームが起動できない可能性があります。注入を復元してください",
@@ -102,7 +102,8 @@
       "SaveFolderNotFound": "セーブフォルダが存在しません。",
       "GameExeNotFound": "ゲームの実行ファイルが見つかりません。",
       "LaunchGameFailed": "ゲームの起動に失敗しました：{0}",
-      "TryManualInject": "UE4SS がゲームと一緒に正常に起動しない場合は、静的DLL注入を試してください。"
+      "TryManualInject": "UE4SS がゲームと一緒に正常に起動しない場合は、静的DLL注入を試してください。",
+      "BPModWithoutLogicMods": "LogicMods フォルダーが検出されませんでした。ブループリントモジュールを含む Mod をインストールできません。"
     }
   },
   "Mods": {

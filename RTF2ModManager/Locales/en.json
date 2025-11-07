@@ -80,7 +80,7 @@
       "InjectTimeout": "Injection process timed out and was terminated.",
       "InjectNonZeroExit": "Injection tool returned non-zero exit code: {0}. Check file paths and permissions.",
       "InjectBackupMissing": "Backup file not found; the game may not have been injected.",
-      "LogicModsMissing": "logicMods folder not found. After installing UE4SS, launch the game once. If still missing, try manual injection.",
+      "LogicModsMissing": "LogicMods folder not found. After installing UE4SS, launch the game once. If still missing, try manual injection.",
       "AOBMissing": "AOB scripts not found — UE4SS may not function correctly. Try repairing or reinstalling.",
       "ManuallyInjected": "Statically injected",
       "InjectBackupResidual": "Residual injection backup detected — the game may fail to start due to leftover DLL dependencies. Please restore injection.",
@@ -102,7 +102,8 @@
       "SaveFolderNotFound": "Save folder not found.",
       "GameExeNotFound": "Game executable not found.",
       "LaunchGameFailed": "Failed to launch game: {0}",
-      "TryManualInject": "If UE4SS does not start with the game, try static injection"
+      "TryManualInject": "If UE4SS does not start with the game, try static injection",
+      "BPModWithoutLogicMods": "The LogicMods folder was not detected. Cannot install Mods that contain blueprint modules."
     }
   },
   "Mods": {
