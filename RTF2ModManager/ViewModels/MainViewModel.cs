@@ -246,7 +246,7 @@ namespace RTF2ModManager
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    string.Format(L18nUtils.GetLocalizationText("UI.Messages.InstallUE4SSFailedWithError"), ex.Message),
+                    L18nUtils.GetLocalizationText("UI.Messages.InstallUE4SSFailedWithError", ex.Message),
                     L18nUtils.GetLocalizationText("UI.Phrases.Error"),
                     MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
@@ -291,7 +291,7 @@ namespace RTF2ModManager
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    string.Format(L18nUtils.GetLocalizationText("UI.Messages.UninstallUE4SSFailedWithError"), ex.Message),
+                    L18nUtils.GetLocalizationText("UI.Messages.UninstallUE4SSFailedWithError", ex.Message),
                     L18nUtils.GetLocalizationText("UI.Phrases.Error"),
                     MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
@@ -344,7 +344,7 @@ namespace RTF2ModManager
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    string.Format(L18nUtils.GetLocalizationText("UI.Messages.ManualInjectFailedWithError"), ex.Message),
+                    L18nUtils.GetLocalizationText("UI.Messages.ManualInjectFailedWithError", ex.Message),
                     L18nUtils.GetLocalizationText("UI.Phrases.Error"),
                     MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
@@ -389,7 +389,7 @@ namespace RTF2ModManager
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    string.Format(L18nUtils.GetLocalizationText("UI.Messages.RestoreInjectFailedWithError"), ex.Message),
+                    L18nUtils.GetLocalizationText("UI.Messages.RestoreInjectFailedWithError", ex.Message),
                     L18nUtils.GetLocalizationText("UI.Phrases.Error"),
                     MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
@@ -625,7 +625,7 @@ namespace RTF2ModManager
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    string.Format(L18nUtils.GetLocalizationText("UI.Messages.OpenFileFailed"), ex.Message),
+                    L18nUtils.GetLocalizationText("UI.Messages.OpenFileFailed", ex.Message),
                     L18nUtils.GetLocalizationText("UI.Phrases.Error"),
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -653,7 +653,7 @@ namespace RTF2ModManager
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    string.Format(L18nUtils.GetLocalizationText("UI.Messages.OpenFolderFailed"), ex.Message),
+                    L18nUtils.GetLocalizationText("UI.Messages.OpenFolderFailed", ex.Message),
                     L18nUtils.GetLocalizationText("UI.Phrases.Error"),
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -678,7 +678,7 @@ namespace RTF2ModManager
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    string.Format(L18nUtils.GetLocalizationText("UI.Messages.LaunchGameFailed"), ex.Message),
+                    L18nUtils.GetLocalizationText("UI.Messages.LaunchGameFailed", ex.Message),
                     L18nUtils.GetLocalizationText("UI.Phrases.Error"),
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
