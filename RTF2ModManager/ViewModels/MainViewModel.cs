@@ -569,13 +569,12 @@ namespace RTF2ModManager
                         if (mod.ModModules.Any(m => m is not PAKModule))
                         {
                             ModDetailBox.Text += "\n\n" + L18nUtils.GetLocalizationText("UI.Messages.UE4SSMissingForNonPak");
+                            InstallOrRepairButton.IsEnabled = false;
 
                             if (mod.ModModules.Any(m => m is BPModule && m.IsInstalled()))
                             {
                                 ModDetailBox.Text += "\n" + L18nUtils.GetLocalizationText("UI.Messages.BPModulePartialEffect");
                             }
-
-                            InstallOrRepairButton.IsEnabled = false;
                         }
                         else
                         {
@@ -585,7 +584,15 @@ namespace RTF2ModManager
                     }
                     else
                     {
-                        InstallOrRepairButton.IsEnabled = true;
+                        if(mod.ModModules.Any(m => m is BPModule) && !uE4SSStatus.logicModsExists)
+                        {
+                            ModDetailBox.Text += "\n\n" + L18nUtils.GetLocalizationText("UI.Messages.BPModWithoutLogicMods");
+                            InstallOrRepairButton.IsEnabled = false;
+                        }
+                        else
+                        {
+                            InstallOrRepairButton.IsEnabled = true;
+                        }
                     }
                     UninstallButton.IsEnabled = true;
                 }

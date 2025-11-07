@@ -103,7 +103,8 @@
       "SaveFolderNotFound": "存档文件夹不存在。",
       "GameExeNotFound": "未找到游戏可执行文件。",
       "LaunchGameFailed": "启动游戏失败：{0}",
-      "TryManualInject": "如果UE4SS无法正常随游戏启动，请尝试静态注入"
+      "TryManualInject": "如果UE4SS无法正常随游戏启动，请尝试静态注入",
+      "BPModWithoutLogicMods": "未检测到 logicMods 文件夹，无法安装含有蓝图模块的Mod"
     }
   },
   "Mods":{
