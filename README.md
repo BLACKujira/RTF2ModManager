@@ -8,6 +8,8 @@ This program is designed to simplify the installation of UE4SS dependencies, as 
 
 ## User Guide
 
+> For a more detailed tutorial, please refer to [RTF2ModdingGuide](https://github.com/BLACKujira/RTF2ModdingGuide) — [Using the Mod Manager](https://github.com/BLACKujira/RTF2ModdingGuide/blob/master/Chapter1_TheBasics/en/UsingModManager.md)
+
 ### Installation and Launch
 
 1. Download `RTF2ModManager.zip` from [Releases](https://github.com/BLACKujira/GTypeOrigin/releases)

@@ -6,6 +6,8 @@
 
 ## 使用指南
 
+> 更详细的教程请查看 [RTF2ModdingGuide](https://github.com/BLACKujira/RTF2ModdingGuide) 中的 [使用Mod管理器](https://github.com/BLACKujira/RTF2ModdingGuide/blob/master/Chapter1_TheBasics/zhs/%E4%BD%BF%E7%94%A8Mod%E7%AE%A1%E7%90%86%E5%99%A8.md)
+
 ### 安装与启动
 
 1. 从 [Releases](https://github.com/BLACKujira/GTypeOrigin/releases) 中下载 `RTF2ModManager.zip`

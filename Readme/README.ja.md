@@ -6,6 +6,9 @@
 
 ## 使用ガイド
 
+> 詳しいチュートリアルは、[RTF2ModdingGuide](https://github.com/BLACKujira/RTF2ModdingGuide) 内の [Modマネージャーの使用方法](https://github.com/BLACKujira/RTF2ModdingGuide/blob/master/Chapter1_TheBasics/ja/Modマネージャーの使用方法.md) をご覧ください。
+
+
 ### インストールと起動
 
 1.  [Releases](https://github.com/BLACKujira/GTypeOrigin/releases) から `RTF2ModManager.zip` をダウンロードします。
